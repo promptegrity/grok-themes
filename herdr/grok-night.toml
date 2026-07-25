@@ -5,8 +5,8 @@
 name = "vesper"
 
 [theme.custom]
-# Focused borders, tabs, nav chrome — muted, not loud magenta
-accent = "#585858"
+# Focused borders / active frame — GrokNight yellow
+accent = "#E0AF68"
 panel_bg = "#141414"
 surface0 = "#1c1c1c"
 surface1 = "#242424"
@@ -25,4 +25,4 @@ teal = "#1abc9c"
 peach = "#ff9e64"
 
 [ui]
-accent = "#585858"
+accent = "#E0AF68"
