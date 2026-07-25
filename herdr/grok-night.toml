@@ -1,20 +1,22 @@
 # GrokNight for Herdr — merge into ~/.config/herdr/config.toml
-# Source: xai-org/grok-build (neutral gray + TokyoNight accents)
+# Chrome (borders/tabs) stays deep gray; bright colors only for status accents.
 
 [theme]
 name = "vesper"
 
 [theme.custom]
-accent = "#bb9af7"
+# Focused borders, tabs, nav chrome — muted, not loud magenta
+accent = "#585858"
 panel_bg = "#141414"
 surface0 = "#1c1c1c"
 surface1 = "#242424"
 surface_dim = "#1c1c1c"
-overlay0 = "#787878"
+overlay0 = "#6c6c6c"
 overlay1 = "#c8c8c8"
 text = "#e1e1e1"
 subtext0 = "#c8c8c8"
-mauve = "#bb9af7"
+# Semantic accents (agent state, alerts) — restrained TokyoNight
+mauve = "#9d7cd8"
 green = "#9ece6a"
 yellow = "#e0af68"
 red = "#f7768e"
@@ -23,4 +25,4 @@ teal = "#1abc9c"
 peach = "#ff9e64"
 
 [ui]
-accent = "#bb9af7"
+accent = "#585858"
