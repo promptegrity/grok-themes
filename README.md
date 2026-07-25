@@ -4,6 +4,10 @@ Unified **GrokNight** / **GrokDay** themes for everyday tools — Ghostty, Nushe
 
 Palettes adapted from [xai-org/grok-build](https://github.com/xai-org/grok-build).
 
+
+![Grok themes in Herdr + Ghostty — GrokNight with muted chrome and yellow accent](./assets/preview.jpg)
+
+
 ## Why this exists
 
 I wanted one visual language across the tools I use every day. Catppuccin was my default for a long time — modern, polished, and widely supported — but the purple and pastel accents never quite felt like me.
