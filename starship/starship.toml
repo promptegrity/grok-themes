@@ -1,0 +1,222 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](fg:surface1)\
+$os\
+$username\
+[](bg:surface0 fg:surface1)\
+$directory\
+[](bg:surface2 fg:surface0)\
+$git_branch\
+$git_status\
+[](fg:surface2)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+$conda\
+$time\
+$cmd_duration\
+$line_break\
+$character"""
+
+palette = 'grok_night'
+
+[os]
+disabled = false
+style = "bg:surface1 fg:subtext1"
+
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bg:surface1 fg:text"
+style_root = "bg:surface1 fg:maroon"
+format = '[ $user ]($style)'
+
+[directory]
+style = "bg:surface0 fg:subtext1"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:surface2"
+format = '[[ $symbol $branch ](fg:yellow bg:surface2)]($style)'
+
+[git_status]
+style = "bg:surface2"
+format = '[[($all_status$ahead_behind )](fg:peach bg:surface2)]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[c]
+symbol = " "
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[rust]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[golang]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[php]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[java]
+symbol = " "
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[kotlin]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[haskell]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $version) ](fg:overlay2)]($style)'
+
+[python]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:overlay2)]($style)'
+
+[docker_context]
+symbol = ""
+style = "fg:overlay2"
+format = '[[ $symbol( $context) ](fg:overlay2)]($style)'
+
+[conda]
+symbol = "  "
+style = "fg:overlay2"
+format = '[$symbol$environment ]($style)'
+ignore_base = false
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:overlay1"
+format = '[[  $time ](fg:overlay1)]($style)'
+
+[line_break]
+disabled = true
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:text)'
+error_symbol = '[❯](bold fg:maroon)'
+vimcmd_symbol = '[❮](bold fg:subtext1)'
+vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
+vimcmd_replace_symbol = '[❮](bold fg:lavender)'
+vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+[cmd_duration]
+show_milliseconds = false
+format = " [$duration](fg:overlay2)"
+style = "fg:overlay2"
+disabled = false
+show_notifications = true
+min_time_to_notify = 45000
+
+
+# Grok Night — deep grays + restrained accents (SpaceX / grok-build)
+[palettes.grok_night]
+rosewater = "#e1e1e1"
+flamingo = "#c8c8c8"
+pink = "#9d7cd8"
+mauve = "#9d7cd8"
+red = "#f7768e"
+maroon = "#f7768e"
+peach = "#ff9e64"
+yellow = "#e0af68"
+green = "#9ece6a"
+teal = "#1abc9c"
+sky = "#7dcfff"
+sapphire = "#7aa2f7"
+blue = "#7aa2f7"
+lavender = "#bb9af7"
+text = "#e1e1e1"
+subtext1 = "#c8c8c8"
+subtext0 = "#787878"
+overlay2 = "#6c6c6c"
+overlay1 = "#5a5a5a"
+overlay0 = "#414141"
+surface2 = "#2a2a2a"
+surface1 = "#242424"
+surface0 = "#1c1c1c"
+base = "#141414"
+mantle = "#111111"
+crust = "#0a0a0a"
+
+[palettes.grok_day]
+rosewater = "#262626"
+flamingo = "#444444"
+pink = "#7D4BC6"
+mauve = "#6C3EB2"
+red = "#CD3048"
+maroon = "#CD3048"
+peach = "#C3691E"
+yellow = "#A27612"
+green = "#378E23"
+teal = "#0A8E70"
+sky = "#0082AA"
+sapphire = "#2F64D2"
+blue = "#2F64D2"
+lavender = "#7D4BC6"
+text = "#262626"
+subtext1 = "#444444"
+subtext0 = "#626262"
+overlay2 = "#767676"
+overlay1 = "#8e8e8e"
+overlay0 = "#a5a5a5"
+surface2 = "#d8d8d8"
+surface1 = "#dedede"
+surface0 = "#eaeaea"
+base = "#eeeeee"
+mantle = "#f0f0f0"
+crust = "#f5f5f5"

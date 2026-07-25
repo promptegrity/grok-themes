@@ -1,0 +1,42 @@
+/* Grok palettes — reference (from xai-org/grok-build) */
+
+:root,
+[data-theme="grok-night"] {
+  --bg: #141414;
+  --bg-terminal: #0a0a0a;
+  --bg-highlight: #242424;
+  --fg: #e1e1e1;
+  --fg-secondary: #c8c8c8;
+  --muted: #6c6c6c;
+  --blue: #7aa2f7;
+  --cyan: #7dcfff;
+  --green: #9ece6a;
+  --magenta: #bb9af7;
+  --orange: #ff9e64;
+  --purple: #9d7cd8;
+  --red: #f7768e;
+  --teal: #1abc9c;
+  --yellow: #e0af68;
+  --plan: #FFDB8D;
+  --link: #7aa6da;
+}
+
+[data-theme="grok-day"] {
+  --bg: #eeeeee;
+  --bg-terminal: #f5f5f5;
+  --bg-highlight: #dedede;
+  --fg: #262626;
+  --fg-secondary: #444444;
+  --muted: #767676;
+  --blue: #2F64D2;
+  --cyan: #0082AA;
+  --green: #378E23;
+  --magenta: #7D4BC6;
+  --orange: #C3691E;
+  --purple: #6C3EB2;
+  --red: #CD3048;
+  --teal: #0A8E70;
+  --yellow: #A27612;
+  --plan: #A8780A;
+  --link: #2F64D2;
+}

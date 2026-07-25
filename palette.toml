@@ -1,0 +1,90 @@
+# Grok color palettes — reference
+# Source: https://github.com/xai-org/grok-build
+#   crates/codegen/xai-grok-pager-render/src/theme/groknight.rs
+#   crates/codegen/xai-grok-pager-render/src/theme/grokday.rs
+#
+# Default UI theme: GrokNight (neutral gray + TokyoNight accents)
+
+[grok_night]
+# Backgrounds
+bg_terminal   = "#0a0a0a"  # darkest / terminal
+bg_dark       = "#0c0c0c"
+bg_storm_dark = "#111111"
+bg            = "#141414"  # main background
+bg_highlight  = "#242424"
+
+# Text / grays
+fg            = "#e1e1e1"  # primary text
+fg_secondary  = "#c8c8c8"
+fg_gutter     = "#414141"
+comment       = "#6c6c6c"
+dark3         = "#5a5a5a"
+dark5         = "#787878"
+
+# Accents (TokyoNight)
+blue          = "#7aa2f7"
+blue0         = "#3d59a1"
+blue1         = "#3A95AB"
+cyan          = "#7dcfff"
+green         = "#9ece6a"
+green1        = "#73daca"
+magenta       = "#bb9af7"
+orange        = "#ff9e64"
+purple        = "#9d7cd8"
+red           = "#f7768e"
+red1          = "#db4b4b"
+teal          = "#1abc9c"
+yellow        = "#e0af68"
+
+# Semantic
+accent_assistant = "#bb9af7"
+accent_system    = "#7aa2f7"
+accent_error     = "#f7768e"
+accent_success   = "#9ece6a"
+accent_plan      = "#FFDB8D"
+accent_model     = "#1abc9c"
+link             = "#7aa6da"
+diff_delete_bg   = "#420e14"
+diff_insert_bg   = "#063806"
+
+[grok_day]
+# Backgrounds
+bg_terminal   = "#f5f5f5"
+bg_dark       = "#f0f0f0"
+bg_storm_dark = "#eaeaea"
+bg            = "#eeeeee"  # main background
+bg_highlight  = "#dedede"
+
+# Text / grays
+fg            = "#262626"
+fg_secondary  = "#444444"
+fg_gutter     = "#b2b2b2"
+comment       = "#767676"
+dark3         = "#8e8e8e"
+dark5         = "#626262"
+
+# Accents (deepened for light bg)
+blue          = "#2F64D2"
+blue0         = "#28448A"
+blue1         = "#0F87A2"
+cyan          = "#0082AA"
+green         = "#378E23"
+green1        = "#0C947C"
+magenta       = "#7D4BC6"
+orange        = "#C3691E"
+purple        = "#6C3EB2"
+red           = "#CD3048"
+red1          = "#AF2323"
+teal          = "#0A8E70"
+yellow        = "#A27612"
+
+# Semantic
+accent_assistant = "#7D4BC6"
+accent_system    = "#2F64D2"
+accent_error     = "#CD3048"
+accent_success   = "#378E23"
+accent_plan      = "#A8780A"
+accent_model     = "#0A8E70"
+link             = "#2F64D2"
+diff_delete_bg   = "#F5DADE"
+diff_insert_bg   = "#DAF2DC"
