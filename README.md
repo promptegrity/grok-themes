@@ -1,6 +1,6 @@
 # Grok Themes
 
-Unified **GrokNight** / **GrokDay** themes for everyday tools — Ghostty, Nushell, and Starship.
+Unified **GrokNight** / **GrokDay** themes for everyday tools — Ghostty, Nushell, Starship, and Herdr.
 
 Palettes adapted from [xai-org/grok-build](https://github.com/xai-org/grok-build).
 
@@ -8,7 +8,7 @@ Palettes adapted from [xai-org/grok-build](https://github.com/xai-org/grok-build
 
 I wanted one visual language across the tools I use every day. Catppuccin was my default for a long time — modern, polished, and widely supported — but the purple and pastel accents never quite felt like me.
 
-GrokNight (from grok-build) does. It’s dark, coherent, and professional. Grok and Cursor are also where I spend most of my time, so I adapted that palette into themes for Ghostty, Nushell, and Starship to keep a consistent look across the stack.
+GrokNight (from grok-build) does. It’s dark, coherent, and professional. Grok and Cursor are also where I spend most of my time, so I adapted that palette into themes for Ghostty, Nushell, Starship, and Herdr to keep a consistent look across the stack.
 
 ## Layout
 
@@ -20,6 +20,8 @@ ghostty/grok-day       # Ghostty light
 nushell/grok-night.nu  # Nushell syntax / table colors
 nushell/grok-day.nu
 starship/starship.toml # muted powerline (default: grok_night)
+herdr/grok-night.toml  # Herdr UI theme snippet (dark)
+herdr/grok-day.toml    # Herdr UI theme snippet (light)
 ```
 
 ## Install
@@ -70,6 +72,22 @@ Default palette is `grok_night`. For light mode, set:
 
 ```toml
 palette = 'grok_day'
+```
+
+
+### Herdr
+
+Herdr has no standalone theme files — merge a snippet into `~/.config/herdr/config.toml`:
+
+```sh
+# preview
+cat herdr/grok-night.toml
+```
+
+Copy the `[theme]`, `[theme.custom]`, and `[ui].accent` values from `herdr/grok-night.toml` (or `grok-day.toml`) into your config, then reload:
+
+```sh
+herdr server reload-config
 ```
 
 ## Palettes

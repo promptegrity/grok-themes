@@ -1,0 +1,26 @@
+# GrokNight for Herdr — merge into ~/.config/herdr/config.toml
+# Source: xai-org/grok-build (neutral gray + TokyoNight accents)
+
+[theme]
+name = "vesper"
+
+[theme.custom]
+accent = "#bb9af7"
+panel_bg = "#141414"
+surface0 = "#1c1c1c"
+surface1 = "#242424"
+surface_dim = "#1c1c1c"
+overlay0 = "#787878"
+overlay1 = "#c8c8c8"
+text = "#e1e1e1"
+subtext0 = "#c8c8c8"
+mauve = "#bb9af7"
+green = "#9ece6a"
+yellow = "#e0af68"
+red = "#f7768e"
+blue = "#7aa2f7"
+teal = "#1abc9c"
+peach = "#ff9e64"
+
+[ui]
+accent = "#bb9af7"
