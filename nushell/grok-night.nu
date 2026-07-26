@@ -35,13 +35,15 @@ let scheme = {
   punctuation: $theme.overlay2
   operator: $theme.sky
   string: $theme.green
-  virtual_text: $theme.surface2
+  # surface2 (#363636) is a near-bg gray — unreadable as text on #141414.
+  # Use overlay2 (comment gray) for hints / dim UI chrome.
+  virtual_text: $theme.overlay2
   variable: { fg: $theme.flamingo attr: i }
   filepath: $theme.yellow
 }
 
 $env.config.color_config = {
-  separator: { fg: $theme.surface2 attr: b }
+  separator: { fg: $theme.overlay1 attr: b }
   leading_trailing_space_bg: { fg: $theme.lavender attr: u }
   header: { fg: $theme.text attr: b }
   row_index: $scheme.virtual_text
