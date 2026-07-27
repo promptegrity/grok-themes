@@ -24,3 +24,12 @@ peach = "#C3691E"
 
 [ui]
 accent = "#a5a5a5"
+
+# Space sidebar: Starship powerline branch ( + name) in GrokDay yellow.
+# Requires herdr/powerline-branch plugin for $pl_branch (see README).
+[ui.sidebar.spaces]
+row_gap = 1
+rows = [
+  ["state_icon", "workspace"],
+  [{ token = "$pl_branch", fg = "#A27612" }, { token = "git_status", fg = "#C3691E" }],
+]

@@ -1,0 +1,35 @@
+id = "grok.powerline-branch"
+name = "Powerline Branch"
+version = "0.1.0"
+min_herdr_version = "0.7.0"
+description = "Sidebar branch token $pl_branch as Starship-style  name (yellow via theme)."
+platforms = ["linux", "macos"]
+
+[[startup]]
+command = ["python3", "refresh.sh"]
+
+[[events]]
+on = "workspace.created"
+command = ["python3", "refresh.sh"]
+
+[[events]]
+on = "workspace.focused"
+command = ["python3", "refresh.sh"]
+
+[[events]]
+on = "workspace.updated"
+command = ["python3", "refresh.sh"]
+
+[[events]]
+on = "worktree.created"
+command = ["python3", "refresh.sh"]
+
+[[events]]
+on = "worktree.opened"
+command = ["python3", "refresh.sh"]
+
+[[actions]]
+id = "refresh"
+title = "Refresh powerline branch labels"
+contexts = ["global", "workspace"]
+command = ["python3", "refresh.sh"]
