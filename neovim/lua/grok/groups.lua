@@ -502,9 +502,9 @@ function M.get(c)
     SnacksDashboardFooter = { fg = c.comment },
     SnacksIndent = { fg = c.fg_gutter },
     SnacksIndentScope = { fg = c.dark3 },
-    -- Snacks explorer / picker — monochrome void (no rainbow file tree)
-    SnacksPicker = { fg = c.comment, bg = c.bg_float },
-    SnacksPickerBorder = { fg = c.bg_highlight, bg = c.bg_float },
+    -- Snacks explorer / picker — monochrome; explorer bg ≈ editor (soft split)
+    SnacksPicker = { fg = c.comment, bg = c.bg_sidebar },
+    SnacksPickerBorder = { fg = c.bg_highlight, bg = c.bg_sidebar },
     SnacksPickerTitle = { fg = c.fg_secondary },
     SnacksPickerMatch = { fg = c.fg, bold = true },
     SnacksPickerDir = { fg = c.fg_secondary },
@@ -536,6 +536,7 @@ function M.get(c)
     SnacksExplorerNormal = { fg = c.comment, bg = c.bg_sidebar },
     SnacksExplorerTitle = { fg = c.fg_secondary },
     SnacksExplorerCursorLine = { bg = c.surface2, fg = c.fg },
+    -- list/input panes inside explorer share picker groups above
 
     -- ── Bufferline — Herdr-style: dark tabs, yellow on active ─
     BufferLineFill = { bg = c.bg_terminal },

@@ -14,11 +14,12 @@ M.night = {
   bg_visual = "#242424", -- match Ghostty selection-background
   bg_popup = "#0c0c0c",
   bg_float = "#0c0c0c",
-  bg_statusline = "#0a0a0a",
-  bg_sidebar = "#0a0a0a",
+  bg_statusline = "#0c0c0c",
+  -- Explorer/panel: near editor bg (#141414), soft step not pure void
+  bg_sidebar = "#121212",
   surface0 = "#1c1c1c", -- Herdr surface0
   surface1 = "#242424", -- Herdr surface1
-  surface2 = "#333333", -- explorer selection (must lift off #0a0a0a)
+  surface2 = "#333333", -- explorer selection (lifts off sidebar)
 
   -- Text / grays (restrained — not washed-out bright UI)
   fg = "#e1e1e1",
